@@ -1,0 +1,25 @@
+{
+  "name": "color-art-docs",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "description": "Color Art documentation",
+  "author": "JiatLn <lne128gene980@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JiatLn/color-art-docs.git"
+  },
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@nuxt-themes/docus": "^1.11.1",
+    "@nuxt/eslint-config": "^0.1.1",
+    "eslint": "^8.40.0",
+    "nuxt": "3.4.3"
+  }
+}
