@@ -22,7 +22,9 @@ export default defineAppConfig({
       owner: "JiatLn",
     },
     header: {
-      logo: true
+      logo: false,
+      title: 'Color Art',
+      showLinkIcon: true,
     },
     footer: {
       iconLinks: [
