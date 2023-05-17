@@ -20,9 +20,9 @@ features:
     details: More than 10+ color spaces supported.
   - icon: 👨‍🎨
     title: Color Channels
-    details: Color Channels supported
+    details: Extracts the color channels.
   - icon: 👩‍🎨
     title: Color Operations
-    details: Color Operations supported
+    details: Some color operation functions.
 ---
 

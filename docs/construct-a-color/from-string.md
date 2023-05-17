@@ -20,9 +20,11 @@ impl Color {
 
 - `Result<Self>` - A `Result` containing the parsed color if successful, or an error if not.
 
-## Supported color spaces
+## Supported formatter string
 
 ### RGB or RGBA color space
+
+Supported rgb or rgba formatter string.
 
 #### Examples
 
@@ -36,6 +38,8 @@ let color = Color::from_str("rgba(255, 255, 0, 0.5)").unwrap();
 
 ### HEX string
 
+Supported hex color formatter string.
+
 #### Examples
 
 ```rust
@@ -47,6 +51,8 @@ let color = Color::from_str("#ffff00").unwrap();
 ```
 
 ### HSL or HSLA color space
+
+Supported hsl or hsla formatter string.
 
 #### Examples
 
@@ -60,6 +66,8 @@ let color = Color::from_str("hsla(60, 100%, 50%, 0.5)").unwrap();
 
 ### HSV color space
 
+Supported hsv formatter string.
+
 #### Examples
 
 ```rust
@@ -70,6 +78,8 @@ let color = Color::from_str("hsv(60, 100%, 100%)").unwrap();
 ```
 
 ### HSI color space
+
+Supported hsi formatter string.
 
 #### Examples
 
@@ -82,6 +92,8 @@ let color = Color::from_str("hsi(60, 100%, 66.67%)").unwrap();
 
 ### HWB color space
 
+Supported HWB formatter string.
+
 #### Examples
 
 ```rust
@@ -92,6 +104,8 @@ let color = Color::from_str("hwb(60, 0%, 0%)").unwrap();
 ```
 
 ### CMYK color space
+
+Supported CMYK formatter string.
 
 #### Examples
 
@@ -104,6 +118,8 @@ let color = Color::from_str("cmyk(100%, 0%, 100%, 0%)").unwrap();
 
 ### XYZ color space
 
+Supported XYZ formatter string.
+
 #### Examples
 
 ```rust
@@ -114,6 +130,8 @@ let color = Color::from_str("xyz(0.932231, 0.975339, 0.502949)").unwrap();
 ```
 
 ### YUV color space
+
+Supported YUV formatter string.
 
 #### Examples
 
@@ -126,6 +144,8 @@ let color = Color::from_str("yuv(0.886, -0.4359, 0.1)").unwrap();
 
 ### YCbCr color space
 
+Supported YCbCr formatter string.
+
 #### Examples
 
 ```rust
@@ -137,6 +157,8 @@ let color = Color::from_str("YCbCr(225.93, 0.5755, 148.7269)").unwrap();
 
 ### CIE-LAB color space
 
+Supported CIE-LAB formatter string.
+
 #### Examples
 
 ```rust
@@ -147,6 +169,7 @@ let color = Color::from_str("lab(97.14, -21.55, 94.48)").unwrap();
 ```
 
 ### Named color
+
 
 Currently supported color names are:
 
