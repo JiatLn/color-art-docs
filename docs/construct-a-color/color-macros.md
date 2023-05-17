@@ -4,12 +4,10 @@ You also could construct a color by use `color!` macro.
 
 Currently supported color spaces:
 
-::list{type="success"}
-- [HEX]
-- [RGB] / [RGBA]
-- [HSL]
-- [HSV]
-::
+- HEX
+- RGB / RGBA
+- HSL
+- HSV
 
 More color spaces supported is coming soon!
 

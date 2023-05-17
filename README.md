@@ -8,7 +8,7 @@ This repository is the online documentation for the `Color Art` crate. For the m
 
 ---
 
-Powered by [docus](https://github.com/nuxt-themes/docus).
+Powered by [VITEPRESS](https://vitepress.dev).
 
 Made with ❤️ by [JiatLn](https://github.com/JiatLn).
 

@@ -2,7 +2,6 @@
 
 Color Art supports the following color spaces:
 
-::list{type="success"}
 - RGB or RGBA
 - HEX
 - HSL or HSLA
@@ -13,6 +12,5 @@ Color Art supports the following color spaces:
 - CIE-LAB
 - HWB
 - YCbCr
-::
 
 More color spaces supported is [pr welcome](https://github.com/JiatLn/color-art/pulls)!

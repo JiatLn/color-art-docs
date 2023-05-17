@@ -1,4 +1,4 @@
-# Color Operation
+# Color Operations
 
 Here are some color operation functions.
 

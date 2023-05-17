@@ -1,4 +1,4 @@
-# Color Channel
+# Color Channels
 
 You can use the `red`, `green`, `blue`, `alpha`, `hue`, `saturation`, `lightness`, `whiteness`, `blackness`, `hsv_hue`, `hsv_saturation`, `hsv_value`, `luma`, `luminance`, `gray` method to extract the color channel.
 

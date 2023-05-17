@@ -4,13 +4,11 @@ You can use the `from_<color_space>` method to construct a color from a color sp
 
 Currently supported color spaces:
 
-::list{type="success"}
 - [RGB](#from-rgb-color-space) or [RGBA](#from-rgba-color-space)
 - [HEX](#from-hex-string)
 - [HSL](#from-hsl-color-space)
 - [HSV](#from-hsv-color-space)
 - [CMYK](#from-cmyk-color-space)
-::
 
 More color spaces supported is incoming!
 
@@ -187,5 +185,3 @@ use color_art::Color;
 
 let color = Color::from_cmyk(0.0, 0.0, 1.0, 0.0).unwrap();
 ```
-
-## TODO
