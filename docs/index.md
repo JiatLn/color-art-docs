@@ -4,22 +4,25 @@ layout: home
 
 hero:
   name: "Color Art"
-  text: "Color Art Documentation"
+  text: ""
   tagline: A rust crate for working with colors and color spaces.
   actions:
     - theme: brand
       text: Getting started
       link: /guide/start
     - theme: alt
-      text: Github
+      text: View on Github
       link: https://github.com/JiatLn/color-art
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🎨
+    title: Color Spaces Supported
+    details: More than 10+ color spaces supported.
+  - icon: 👨‍🎨
+    title: Color Channels
+    details: Color Channels supported
+  - icon: 👩‍🎨
+    title: Color Operations
+    details: Color Operations supported
 ---
 

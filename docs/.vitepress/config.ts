@@ -4,13 +4,14 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Color Art",
   description: "Color Art Documentation",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'API', link: '/api/channels' }
     ],
-
+    outline: [2, 3],
     sidebar: [
       {
         text: 'Guide',
@@ -40,6 +41,16 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/JiatLn/color-art' }
-    ]
+    ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2022-present JiatLn'
+    },
+
+    editLink: {
+      pattern: 'https://github.com/JiatLn/color-art-docs/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    }
   }
 })
