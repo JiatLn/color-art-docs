@@ -7,7 +7,9 @@ Returns the numeric representation of the hexadecimal color.
 #### Function signature
 
 ```rust
-pub fn from_num(num: u32) -> Result<Self>
+impl Color {
+  pub fn from_num(num: u32) -> Result<Self>
+}
 ```
 
 #### Parameters

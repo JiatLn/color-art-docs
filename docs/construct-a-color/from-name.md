@@ -10,7 +10,9 @@ Currently supported color names are:
 #### Function signature
 
 ```rust
-pub fn from_name(name: &str) -> Result<Self>
+impl Color {
+  pub fn from_name(name: &str) -> Result<Self>
+}
 ```
 
 #### Parameters

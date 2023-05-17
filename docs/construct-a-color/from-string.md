@@ -7,7 +7,9 @@ You can use the `from_str` method to construct a color from a string.
 #### Function signature
 
 ```rust
-fn from_str(s: &str) -> Result<Self>
+impl Color {
+  fn from_str(s: &str) -> Result<Self>
+}
 ```
 
 #### Parameters

@@ -21,9 +21,11 @@ You could use `from_rgb` to construct a color from `rgb`.
 #### Function signature
 
 ```rust
-pub fn from_rgb<T>(r: T, g: T, b: T) -> Result<Self>
-where
-    T: Into<f64>,
+impl Color {
+    pub fn from_rgb<T>(r: T, g: T, b: T) -> Result<Self>
+    where
+        T: Into<f64>,
+}
 ```
 
 #### Parameters
@@ -51,9 +53,11 @@ You could use `from_rgba` to construct a color from `rgba`.
 #### Function signature
 
 ```rust
-pub fn from_rgba<T>(r: T, g: T, b: T, a: f64) -> Result<Self>
-where
-    T: Into<f64>,
+impl Color {
+    pub fn from_rgba<T>(r: T, g: T, b: T, a: f64) -> Result<Self>
+    where
+        T: Into<f64>,
+}
 ```
 
 #### Parameters
@@ -82,7 +86,9 @@ You could use `from_hex` to construct a color from hex string.
 #### Function signature
 
 ```rust
-pub fn from_hex(hex_str: &str) -> Result<Self>
+impl Color {
+    pub fn from_hex(hex_str: &str) -> Result<Self>
+}
 ```
 
 #### Parameters
@@ -108,7 +114,9 @@ You could use `from_hsl` to construct a color from `hsl`.
 #### Function signature
 
 ```rust
-pub fn from_hsl(h: f64, s: f64, l: f64) -> Result<Self>
+impl Color {
+    pub fn from_hsl(h: f64, s: f64, l: f64) -> Result<Self>
+}
 ```
 
 #### Parameters
@@ -136,7 +144,9 @@ You could use `from_hsv` to construct a color from `hsv`.
 #### Function signature
 
 ```rust
-pub fn from_hsv(h: f64, s: f64, v: f64) -> Result<Self>
+impl Color {
+    pub fn from_hsv(h: f64, s: f64, v: f64) -> Result<Self>
+}
 ```
 
 #### Parameters
@@ -164,7 +174,9 @@ You could use `from_cmyk` to construct a color from `cmyk`.
 #### Function signature
 
 ```rust
-pub fn from_cmyk(c: f64, m: f64, y: f64, k: f64) -> Result<Self>
+impl Color {
+    pub fn from_cmyk(c: f64, m: f64, y: f64, k: f64) -> Result<Self>
+}
 ```
 
 #### Parameters
