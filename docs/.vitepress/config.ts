@@ -35,6 +35,7 @@ export default defineConfig({
         items: [
           { text: 'Color Channels', link: '/api/channels' },
           { text: 'Color Operations', link: '/api/operations' },
+          { text: 'Color Blendings', link: '/api/blendings' },
         ]
       },
     ],
