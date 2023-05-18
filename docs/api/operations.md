@@ -1,3 +1,7 @@
+<script setup>
+import ColorTrans from '../../components/ColorTrans.vue'
+</script>
+
 # Color Operations
 
 Here are some color operation functions.
@@ -30,6 +34,8 @@ let color = color.darken(0.2);
 color.hex(); // "#990"
 ```
 
+<ColorTrans input="#ffff00" output="#990" />
+
 ### lighten
 
 Increase the lightness of a color in the HSL color space by an absolute amount.
@@ -55,6 +61,8 @@ let color = color!(#ffff00);
 let color = color.lighten(0.2);
 color.hex(); // "#ff6"
 ```
+
+<ColorTrans input="#ffff00" output="#ff6" />
 
 ### saturate
 
@@ -83,6 +91,8 @@ let color = color.saturate(0.2);
 color.hsl(); // "hsl(60, 100%, 50%)"
 ```
 
+<ColorTrans input="hsl(60, 80%, 50%)" output="hsl(60, 100%, 50%)" />
+
 ### desaturate
 
 Decrease the saturation of a color in the HSL color space by an absolute amount.
@@ -110,6 +120,8 @@ let color = color.desaturate(0.2);
 color.hsl(); // "hsl(60, 60%, 50%)"
 ```
 
+<ColorTrans input="hsl(60, 80%, 50%)" output="hsl(60, 60%, 50%)" />
+
 ### greyscale
 
 Remove all saturation from a color in the HSL color space.
@@ -131,6 +143,8 @@ let color = color!(#80e619);
 let color = color.greyscale();
 color.hex(); // "#808080"
 ```
+
+<ColorTrans input="#80e619" output="#808080" />
 
 ### fade
 
@@ -158,6 +172,8 @@ let faded_color = color.fade(0.5);
 faded_color.rgba(); // "rgba(255, 0, 0, 0.5)"
 ```
 
+<ColorTrans input="rgba(255, 0, 0, 1.0)" output="rgba(255, 0, 0, 0.5)" />
+
 ### fade_in
 
 Decrease the transparency (or increase the opacity) of a color, making it more opaque.
@@ -183,6 +199,8 @@ let color = color!(rgba(255, 0, 0, 0.8));
 let faded_color = color.fade_in(0.1);
 faded_color.rgba(); // "rgba(255, 0, 0, 0.9)"
 ```
+
+<ColorTrans input="rgba(255, 0, 0, 0.8)" output="rgba(255, 0, 0, 0.9)" />
 
 ### fade_out
 
@@ -210,6 +228,8 @@ let faded_color = color.fade_out(0.2);
 faded_color.rgba(); // "rgba(255, 0, 0, 0.6)"
 ```
 
+<ColorTrans input="rgba(255, 0, 0, 0.8)" output="rgba(255, 0, 0, 0.6)" />
+
 ### spin
 
 Rotate the hue angle of a color in either direction.
@@ -236,6 +256,8 @@ let color = Color::from_str("hsl(60, 80%, 50%)").unwrap();
 let spun_color = color.spin(80.0);
 spun_color.hsl(); // "hsl(140, 80%, 50%)"
 ```
+
+<ColorTrans input="hsl(60, 80%, 50%)" output="hsl(140, 80%, 50%)" />
 
 ### mix_with
 
@@ -265,6 +287,8 @@ let color3 = color1.mix_with(&color2, 0.5);
 color3.hex(); // "#800080"
 ```
 
+<ColorTrans :input="['#ff0000', '#0000ff']" output="#800080" />
+
 ### tint
 
 Mix color with white in variable proportion.
@@ -291,6 +315,8 @@ let color = color.tint(0.5);
 color.hex(); // "#ff80ff"
 ```
 
+<ColorTrans input="#ff00ff" output="#ff80ff" />
+
 ### shade
 
 Mix color with black in variable proportion.
@@ -316,6 +342,8 @@ let color = color!(#ff00ff);
 let color = color.shade(0.5);
 color.hex(); // "#800080"
 ```
+
+<ColorTrans input="#ff00ff" output="#800080" />
 
 ## References
 
