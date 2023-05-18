@@ -4,13 +4,19 @@ A rust crate for working with colors and color spaces.
 
 ## Usage
 
-#### Add Dependency
+### Install
 
-Add the following to your `Cargo.toml` file:
+Run the following Cargo command in your project directory:
+
+```bash
+cargo add color-art
+```
+
+Or add the following to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-color_art = "0.2"
+color_art = "0.3"
 ```
 
 ---
