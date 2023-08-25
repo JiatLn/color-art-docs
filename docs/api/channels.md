@@ -158,7 +158,11 @@ color.hsv_value(); // 0.9373
 ```
 ## luma
 
-Calculates the [luma](http://en.wikipedia.org/wiki/Luma_%28video%29) (perceptual brightness) of color.
+Calculates the [relative luminance](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef) of color.
+
+the relative brightness of any point in a colorspace, normalized to 0 for darkest black and 1 for lightest white.
+
+same as [`luminance()`](#luminance)
 
 #### Examples
 
@@ -166,12 +170,16 @@ Calculates the [luma](http://en.wikipedia.org/wiki/Luma_%28video%29) (perceptual
 use color_art::color;
 
 let color = color!(#abcdef);
-color.luma(); // 0.59
+color.luma(); // 0.5855256521034803
 ```
 
 ## luminance
 
-Calculates the value of the luma without gamma correction.
+Calculates the [relative luminance](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef) of color.
+
+the relative brightness of any point in a colorspace, normalized to 0 for darkest black and 1 for lightest white.
+
+same as [`luma()`](#luma)
 
 #### Examples
 
@@ -179,7 +187,7 @@ Calculates the value of the luma without gamma correction.
 use color_art::color;
 
 let color = color!(#abcdef);
-color.luminance(); // 0.79
+color.luminance(); // 0.5855256521034803
 ```
 
 ## gray
